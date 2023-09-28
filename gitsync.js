@@ -25,7 +25,7 @@ module.exports = class GitSync {
             log.debug(context.payload);
 
             // Temporary fix until support of PRs
-            if (config.issue.node_id){
+            if (config.issue){
             if (config.issue.node_id.startsWith("PR_")) {
                 // Log and skip PRs (comments)
                 log.info(`Action is performed on PR #${config.issue.number}. Skipping...`);
