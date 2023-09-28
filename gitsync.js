@@ -133,6 +133,7 @@ module.exports = class GitSync {
     }
 
     async performWork(config) {
+        log.info("performWork")
         let workItem = null;
         switch (config.action) {
             case "opened":
